@@ -1,11 +1,11 @@
-FROM alpine:3.19.1 AS base
+FROM alpine:3.20.0 AS base
 ENV apkbuildbaseversion=0.5-r3
 ENV apkfftwversion=3.3.10-r5
-ENV apklibpqversion=16.2-r0
-ENV apkpcre2version=10.42-r2
-ENV apksqliteversion=3.44.2-r0
+ENV apklibpqversion=16.3-r0
+ENV apkpcre2version=10.43-r0
+ENV apksqliteversion=3.45.3-r1
 ENV buildconfigureoptions="--without-gtk3 --without-x"
-ENV buildsourcerevision=1760
+ENV buildsourcerevision=1774
 ENV buildsourceuri=svn://svn.savannah.gnu.org/apl/trunk
 ENV buildsourceversion=1.8
 LABEL apk.build-base.version=${apkbuildbaseversion}
